@@ -6,8 +6,8 @@ on:
 
 env:
   AWS_REGION: ${{ secrets.AWS_REGION }}
-  ECR_REPOSITORY: ${{ secrets.ECR_REPOSITORY }}
-  CONTAINER_NAME: tech-challenger-hiago
+  ECR_REPOSITORY: tech-challenge-hiago/pedido
+  CONTAINER_NAME: tech-challenge-hiago/pedido
 
 permissions:
   contents: read
