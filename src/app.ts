@@ -11,7 +11,7 @@ async function main() {
 
     await mongoCliente.connect();
     const db = mongoCliente.getDb();
-    const app = await expressStart(Number(process.env.PORT ?? 3003), db);
+    const app = await expressStart(Number(3003), db);
 
     process.on("SIGINT", () => {
       gracefulShutdown(app);
@@ -23,7 +23,7 @@ async function main() {
       mongoCliente.close();
     });
 
-    console.log("Application started at port", process.env.PORT ?? 3003);
+    console.log("Application started at port", 3003);
   } catch (error) {
     console.error("Application failed to started with error:", error);
     process.exit(1);
