@@ -37,4 +37,4 @@ RUN echo "starting the app"
 
 EXPOSE 3003
 
-CMD ["node", "dist/app.js"]
+CMD ["node", "dist/src/app.js"]
